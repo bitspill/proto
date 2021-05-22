@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package oipProto.templates;
+
+option go_package = "github.com/oipwg/proto/go/pb_oip5/pb_templates;pb_templates";
+
+import "txid.proto";
+
+// SimpleAssetHeld
+// ee0d326b92182b81811c6a9377dc668a3452fa773dc8150d697899e0301f5cfd
+message tmpl_EE0D326B {
+    oipProto.Txid coin = 1;
+    string asset = 2;
+    uint32 amount = 3;
+    uint32 scale = 4;
+    uint64 expires = 5;
+}
